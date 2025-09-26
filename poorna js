@@ -1,0 +1,18 @@
+ // Get form values
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    // Simple form validation
+    if (name === '' || email === '' || message === '') {
+        alert('All fields are required.');
+    } else {
+        // Simulate form submission
+        document.getElementById('responseMessage').textContent = 'Thank you for your message!';
+        
+        // Clear the form
+        document.getElementById('contactForm').reset();
+    }ocument.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+});
